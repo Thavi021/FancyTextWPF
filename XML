@@ -1,0 +1,65 @@
+<Window x:Class="FeatureTextBoxAndDisplayWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FeatureTextBoxAndDisplayWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,0">
+        <Label Content="ENTER A TEXT THEN PRESS THE BUTTON TO FANCY-FY IT..." 
+              FontSize="30" 
+               HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="800" FontFamily="Yu Gothic UI Semibold"/>
+        <TextBox x:Name="CreateMessageBox"   FontSize="10" HorizontalAlignment="Left" Margin="0,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="790" Height="44" Background="Black" Foreground="White"/>
+        <Button Content="Press To Fancy Text!"  FontSize="30" HorizontalAlignment="Center" Margin="0,117,0,0" VerticalAlignment="Top" Height="100" Width="334" Click="Button_Click" />
+        <TextBox x:Name="DisplayMessageBox" 
+                FontSize="30"
+                 FontFamily="Gigi"
+                 HorizontalAlignment="Center" 
+                 Margin="0,222,0,0"  
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="800" 
+                 Height="80" 
+                 FontStyle="Italic" Background="Black" Foreground="White"/>
+
+        <TextBox x:Name="DisplayMessageBox2" 
+                FontSize="30"
+                 FontFamily="Goudy Stout"
+                 HorizontalAlignment="Center" 
+                 Margin="0,279,0,0"  
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="800" 
+                 Height="45" 
+                 TextChanged="DisplayMessageBox_TextChanged" 
+                 FontStyle="Italic" Foreground="White" Background="#FFF61111"/>
+
+        <TextBox x:Name="DisplayMessageBox3" 
+                FontSize="30"
+                 FontFamily="Jokerman"
+                 HorizontalAlignment="Center" 
+                 Margin="0,324,0,0"  
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="800" 
+                 Height="40" 
+                 TextChanged="DisplayMessageBox_TextChanged" 
+                 FontStyle="Italic" Foreground="Black"/>
+
+        <TextBox x:Name="DisplayMessageBox4" 
+                FontSize="30"
+                 FontFamily="Kunstler Script"
+                 HorizontalAlignment="Center" 
+                 Margin="0,369,0,0"  
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="800" 
+                 Height="57" 
+                 TextChanged="DisplayMessageBox_TextChanged" 
+                 FontStyle="Normal" Foreground="Red" Background="Black"/>
+
+
+
+    </Grid>
+</Window>
